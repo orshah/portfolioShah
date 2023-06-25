@@ -13,15 +13,7 @@ import {
   ElearningContactPage,
   ElearningCoursesPage,
   ElearningLandingPage,
-  // Auth
-  LoginCoverPage,
-  VerifyCodePage,
-  RegisterCoverPage,
-  ResetPasswordPage,
-  LoginBackgroundPage,
-  LoginIllustrationPage,
-  RegisterBackgroundPage,
-  RegisterIllustrationPage,
+
   // Common
   Page404,
   Page500,
@@ -54,14 +46,6 @@ import {
 
 export default function Router() {
   return useRoutes([
-    // Non layout
-    {
-      path: 'auth',
-      children: [
-        { path: 'login-cover', element: <LoginCoverPage /> },
-        { path: 'register-cover', element: <RegisterCoverPage /> },
-      ],
-    },
     // Main layout
     {
       element: <MainLayout />,
@@ -111,15 +95,6 @@ export default function Router() {
         { path: 'payment', element: <PaymentPage /> },
         { path: 'pricing-01', element: <Pricing01Page /> },
         { path: 'pricing-02', element: <Pricing02Page /> },
-        {
-          path: 'auth',
-          children: [
-            { path: 'login-background', element: <LoginBackgroundPage /> },
-            { path: 'login-illustration', element: <LoginIllustrationPage /> },
-            { path: 'register-background', element: <RegisterBackgroundPage /> },
-            { path: 'register-illustration', element: <RegisterIllustrationPage /> },
-          ],
-        },
       ],
     },
     // Compact layout
@@ -130,15 +105,6 @@ export default function Router() {
         { path: 'maintenance', element: <MaintenancePage /> },
         { path: '500', element: <Page500 /> },
         { path: '404', element: <Page404 /> },
-        { path: 'reset-code', element: <ResetPasswordPage /> },
-        { path: 'verify-code', element: <VerifyCodePage /> },
-        {
-          path: 'auth',
-          children: [
-            { path: 'reset-code', element: <ResetPasswordPage /> },
-            { path: 'verify-code', element: <VerifyCodePage /> },
-          ],
-        },
       ],
     },
     { path: '*', element: <Navigate to="/404" replace /> },
