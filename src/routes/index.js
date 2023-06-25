@@ -18,11 +18,6 @@ import {
   Page404,
   Page500,
   HomePage,
-  PaymentPage,
-  SupportPage,
-  Pricing01Page,
-  Pricing02Page,
-  MaintenancePage,
   // Components
   DemoIconsPage,
   DemoImagePage,
@@ -50,7 +45,6 @@ export default function Router() {
       element: <MainLayout />,
       children: [
         { element: <HomePage />, index: true },
-        { path: 'support', element: <SupportPage /> },
         // E-learning
         {
           path: 'e-learning',
@@ -90,17 +84,11 @@ export default function Router() {
     // Simple layout
     {
       element: <SimpleLayout />,
-      children: [
-        { path: 'payment', element: <PaymentPage /> },
-        { path: 'pricing-01', element: <Pricing01Page /> },
-        { path: 'pricing-02', element: <Pricing02Page /> },
-      ],
     },
     // Compact layout
     {
       element: <CompactLayout />,
       children: [
-        { path: 'maintenance', element: <MaintenancePage /> },
         { path: '500', element: <Page500 /> },
         { path: '404', element: <Page404 /> },
       ],
