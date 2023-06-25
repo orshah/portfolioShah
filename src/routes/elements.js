@@ -13,32 +13,6 @@ const Loadable = (Component) => (props) =>
 
 // ----------------------------------------------------------------------
 
-// MARKETING
-export const MarketingAboutPage = Loadable(
-  lazy(() => import('../pages/marketing/MarketingAboutPage'))
-);
-export const MarketingBlogPage = Loadable(
-  lazy(() => import('../pages/marketing/MarketingBlogPage'))
-);
-export const MarketingCaseStudiesPage = Loadable(
-  lazy(() => import('../pages/marketing/MarketingCaseStudiesPage'))
-);
-export const MarketingCaseStudyPage = Loadable(
-  lazy(() => import('../pages/marketing/MarketingCaseStudyPage'))
-);
-export const MarketingContactPage = Loadable(
-  lazy(() => import('../pages/marketing/MarketingContactPage'))
-);
-export const MarketingLandingPage = Loadable(
-  lazy(() => import('../pages/marketing/MarketingLandingPage'))
-);
-export const MarketingPostPage = Loadable(
-  lazy(() => import('../pages/marketing/MarketingPostPage'))
-);
-export const MarketingServicesPage = Loadable(
-  lazy(() => import('../pages/marketing/MarketingServicesPage'))
-);
-
 // CAREER
 export const CareerAboutPage = Loadable(lazy(() => import('../pages/career/CareerAboutPage')));
 export const CareerBlogPage = Loadable(lazy(() => import('../pages/career/CareerBlogPage')));

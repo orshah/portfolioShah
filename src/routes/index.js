@@ -5,15 +5,6 @@ import SimpleLayout from '../layouts/simple';
 import CompactLayout from '../layouts/compact';
 //
 import {
-  // Marketing
-  MarketingBlogPage,
-  MarketingPostPage,
-  MarketingAboutPage,
-  MarketingContactPage,
-  MarketingLandingPage,
-  MarketingServicesPage,
-  MarketingCaseStudyPage,
-  MarketingCaseStudiesPage,
   // Career
   CareerJobPage,
   CareerBlogPage,
@@ -85,20 +76,6 @@ export default function Router() {
       children: [
         { element: <HomePage />, index: true },
         { path: 'support', element: <SupportPage /> },
-        // Marketing
-        {
-          path: 'marketing',
-          children: [
-            { path: 'landing', element: <MarketingLandingPage /> },
-            { path: 'services', element: <MarketingServicesPage /> },
-            { path: 'case-studies', element: <MarketingCaseStudiesPage /> },
-            { path: 'case-study', element: <MarketingCaseStudyPage /> },
-            { path: 'posts', element: <MarketingBlogPage /> },
-            { path: 'post', element: <MarketingPostPage /> },
-            { path: 'about', element: <MarketingAboutPage /> },
-            { path: 'contact', element: <MarketingContactPage /> },
-          ],
-        },
         // Career
         {
           path: 'career',
