@@ -40,36 +40,3 @@ export const ElearningPostPage = Loadable(
 export const HomePage = Loadable(lazy(() => import('../pages/HomePage')));
 export const Page404 = Loadable(lazy(() => import('../pages/Page404')));
 export const Page500 = Loadable(lazy(() => import('../pages/Page500')));
-
-// COMPONENTS
-export const ComponentsPage = Loadable(lazy(() => import('../pages/components/ComponentsPage')));
-export const DemoAnimatePage = Loadable(lazy(() => import('../pages/components/DemoAnimatePage')));
-export const DemoCarouselsPage = Loadable(
-  lazy(() => import('../pages/components/DemoCarouselsPage'))
-);
-export const DemoCountUpPage = Loadable(lazy(() => import('../pages/components/DemoCountUpPage')));
-export const DemoFormValidationPage = Loadable(
-  lazy(() => import('../pages/components/DemoFormValidationPage'))
-);
-export const DemoIconsPage = Loadable(lazy(() => import('../pages/components/DemoIconsPage')));
-export const DemoImagePage = Loadable(lazy(() => import('../pages/components/DemoImagePage')));
-export const DemoLabelPage = Loadable(lazy(() => import('../pages/components/DemoLabelPage')));
-export const DemoLightboxPage = Loadable(
-  lazy(() => import('../pages/components/DemoLightboxPage'))
-);
-export const DemoMarkdownPage = Loadable(
-  lazy(() => import('../pages/components/DemoMarkdownPage'))
-);
-export const DemoMegaMenuPage = Loadable(
-  lazy(() => import('../pages/components/DemoMegaMenuPage'))
-);
-export const DemoNavigationBarPage = Loadable(
-  lazy(() => import('../pages/components/DemoNavigationBarPage'))
-);
-export const DemoPlayerPage = Loadable(lazy(() => import('../pages/components/DemoPlayerPage')));
-export const DemoScrollbarPage = Loadable(
-  lazy(() => import('../pages/components/DemoScrollbarPage'))
-);
-export const DemoTextMaxLinePage = Loadable(
-  lazy(() => import('../pages/components/DemoTextMaxLinePage'))
-);
