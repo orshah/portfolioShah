@@ -39,21 +39,6 @@ export const MarketingServicesPage = Loadable(
   lazy(() => import('../pages/marketing/MarketingServicesPage'))
 );
 
-// TRAVEL
-export const TravelAboutPage = Loadable(lazy(() => import('../pages/travel/TravelAboutPage')));
-export const TravelBlogPage = Loadable(lazy(() => import('../pages/travel/TravelBlogPage')));
-export const TravelCheckoutPage = Loadable(
-  lazy(() => import('../pages/travel/TravelCheckoutPage'))
-);
-export const TravelContactPage = Loadable(lazy(() => import('../pages/travel/TravelContactPage')));
-export const TravelLandingPage = Loadable(lazy(() => import('../pages/travel/TravelLandingPage')));
-export const TravelOrderCompletedPage = Loadable(
-  lazy(() => import('../pages/travel/TravelOrderCompletedPage'))
-);
-export const TravelPostPage = Loadable(lazy(() => import('../pages/travel/TravelPostPage')));
-export const TravelTourPage = Loadable(lazy(() => import('../pages/travel/TravelTourPage')));
-export const TravelToursPage = Loadable(lazy(() => import('../pages/travel/TravelToursPage')));
-
 // CAREER
 export const CareerAboutPage = Loadable(lazy(() => import('../pages/career/CareerAboutPage')));
 export const CareerBlogPage = Loadable(lazy(() => import('../pages/career/CareerBlogPage')));
@@ -84,47 +69,6 @@ export const ElearningLandingPage = Loadable(
 );
 export const ElearningPostPage = Loadable(
   lazy(() => import('../pages/e-learning/ElearningPostPage'))
-);
-
-// E-COMMERCE
-export const EcommerceCartPage = Loadable(
-  lazy(() => import('../pages/e-commerce/EcommerceCartPage'))
-);
-export const EcommerceCheckoutPage = Loadable(
-  lazy(() => import('../pages/e-commerce/EcommerceCheckoutPage'))
-);
-export const EcommerceComparePage = Loadable(
-  lazy(() => import('../pages/e-commerce/EcommerceComparePage'))
-);
-export const EcommerceLandingPage = Loadable(
-  lazy(() => import('../pages/e-commerce/EcommerceLandingPage'))
-);
-export const EcommerceOrderCompletedPage = Loadable(
-  lazy(() => import('../pages/e-commerce/EcommerceOrderCompletedPage'))
-);
-export const EcommerceProductPage = Loadable(
-  lazy(() => import('../pages/e-commerce/EcommerceProductPage'))
-);
-export const EcommerceProductsPage = Loadable(
-  lazy(() => import('../pages/e-commerce/EcommerceProductsPage'))
-);
-export const EcommerceWishlistPage = Loadable(
-  lazy(() => import('../pages/e-commerce/EcommerceWishlistPage'))
-);
-export const EcommerceAccountOrdersPage = Loadable(
-  lazy(() => import('../pages/e-commerce/account/EcommerceAccountOrdersPage'))
-);
-export const EcommerceAccountPaymentPage = Loadable(
-  lazy(() => import('../pages/e-commerce/account/EcommerceAccountPaymentPage'))
-);
-export const EcommerceAccountPersonalPage = Loadable(
-  lazy(() => import('../pages/e-commerce/account/EcommerceAccountPersonalPage'))
-);
-export const EcommerceAccountVouchersPage = Loadable(
-  lazy(() => import('../pages/e-commerce/account/EcommerceAccountVouchersPage'))
-);
-export const EcommerceAccountWishlistPage = Loadable(
-  lazy(() => import('../pages/e-commerce/account/EcommerceAccountWishlistPage'))
 );
 
 // AUTH

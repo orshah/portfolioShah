@@ -14,16 +14,6 @@ import {
   MarketingServicesPage,
   MarketingCaseStudyPage,
   MarketingCaseStudiesPage,
-  // Travel
-  TravelBlogPage,
-  TravelPostPage,
-  TravelTourPage,
-  TravelAboutPage,
-  TravelToursPage,
-  TravelContactPage,
-  TravelLandingPage,
-  TravelCheckoutPage,
-  TravelOrderCompletedPage,
   // Career
   CareerJobPage,
   CareerBlogPage,
@@ -40,20 +30,6 @@ import {
   ElearningContactPage,
   ElearningCoursesPage,
   ElearningLandingPage,
-  // E-Commerce
-  EcommerceCartPage,
-  EcommerceComparePage,
-  EcommerceLandingPage,
-  EcommerceProductPage,
-  EcommerceCheckoutPage,
-  EcommerceProductsPage,
-  EcommerceWishlistPage,
-  EcommerceAccountOrdersPage,
-  EcommerceOrderCompletedPage,
-  EcommerceAccountPaymentPage,
-  EcommerceAccountPersonalPage,
-  EcommerceAccountVouchersPage,
-  EcommerceAccountWishlistPage,
   // Auth
   LoginCoverPage,
   VerifyCodePage,
@@ -123,21 +99,6 @@ export default function Router() {
             { path: 'contact', element: <MarketingContactPage /> },
           ],
         },
-        // Travel
-        {
-          path: 'travel',
-          children: [
-            { path: 'landing', element: <TravelLandingPage /> },
-            { path: 'tours', element: <TravelToursPage /> },
-            { path: 'tour', element: <TravelTourPage /> },
-            { path: 'checkout', element: <TravelCheckoutPage /> },
-            { path: 'order-completed', element: <TravelOrderCompletedPage /> },
-            { path: 'posts', element: <TravelBlogPage /> },
-            { path: 'post', element: <TravelPostPage /> },
-            { path: 'about', element: <TravelAboutPage /> },
-            { path: 'contact', element: <TravelContactPage /> },
-          ],
-        },
         // Career
         {
           path: 'career',
@@ -162,30 +123,6 @@ export default function Router() {
             { path: 'post', element: <ElearningPostPage /> },
             { path: 'about', element: <ElearningAboutPage /> },
             { path: 'contact', element: <ElearningContactPage /> },
-          ],
-        },
-        // E-commerce
-        {
-          path: 'e-commerce',
-          children: [
-            { path: 'landing', element: <EcommerceLandingPage /> },
-            { path: 'products', element: <EcommerceProductsPage /> },
-            { path: 'product', element: <EcommerceProductPage /> },
-            { path: 'cart', element: <EcommerceCartPage /> },
-            { path: 'checkout', element: <EcommerceCheckoutPage /> },
-            { path: 'order-completed', element: <EcommerceOrderCompletedPage /> },
-            { path: 'wishlist', element: <EcommerceWishlistPage /> },
-            { path: 'compare', element: <EcommerceComparePage /> },
-            {
-              path: 'account',
-              children: [
-                { path: 'personal', element: <EcommerceAccountPersonalPage /> },
-                { path: 'wishlist', element: <EcommerceAccountWishlistPage /> },
-                { path: 'vouchers', element: <EcommerceAccountVouchersPage /> },
-                { path: 'orders', element: <EcommerceAccountOrdersPage /> },
-                { path: 'payment', element: <EcommerceAccountPaymentPage /> },
-              ],
-            },
           ],
         },
         // Demo Components
