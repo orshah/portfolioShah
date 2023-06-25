@@ -28,8 +28,6 @@ export default function Router() {
     {
       element: <MainLayout />,
       children: [
-        { element: <HomePage />, index: true },
-        // E-learning
         {
           path: 'e-learning',
           children: [
