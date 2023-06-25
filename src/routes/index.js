@@ -5,14 +5,6 @@ import SimpleLayout from '../layouts/simple';
 import CompactLayout from '../layouts/compact';
 //
 import {
-  // Career
-  CareerJobPage,
-  CareerBlogPage,
-  CareerJobsPage,
-  CareerPostPage,
-  CareerAboutPage,
-  CareerContactPage,
-  CareerLandingPage,
   // E-Learning
   ElearningBlogPage,
   ElearningPostPage,
@@ -76,19 +68,6 @@ export default function Router() {
       children: [
         { element: <HomePage />, index: true },
         { path: 'support', element: <SupportPage /> },
-        // Career
-        {
-          path: 'career',
-          children: [
-            { path: 'landing', element: <CareerLandingPage /> },
-            { path: 'jobs', element: <CareerJobsPage /> },
-            { path: 'job', element: <CareerJobPage /> },
-            { path: 'posts', element: <CareerBlogPage /> },
-            { path: 'post', element: <CareerPostPage /> },
-            { path: 'about', element: <CareerAboutPage /> },
-            { path: 'contact', element: <CareerContactPage /> },
-          ],
-        },
         // E-learning
         {
           path: 'e-learning',

@@ -13,15 +13,6 @@ const Loadable = (Component) => (props) =>
 
 // ----------------------------------------------------------------------
 
-// CAREER
-export const CareerAboutPage = Loadable(lazy(() => import('../pages/career/CareerAboutPage')));
-export const CareerBlogPage = Loadable(lazy(() => import('../pages/career/CareerBlogPage')));
-export const CareerContactPage = Loadable(lazy(() => import('../pages/career/CareerContactPage')));
-export const CareerJobPage = Loadable(lazy(() => import('../pages/career/CareerJobPage')));
-export const CareerJobsPage = Loadable(lazy(() => import('../pages/career/CareerJobsPage')));
-export const CareerLandingPage = Loadable(lazy(() => import('../pages/career/CareerLandingPage')));
-export const CareerPostPage = Loadable(lazy(() => import('../pages/career/CareerPostPage')));
-
 // E-LEARNING
 export const ElearningAboutPage = Loadable(
   lazy(() => import('../pages/e-learning/ElearningAboutPage'))
