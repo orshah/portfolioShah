@@ -22,7 +22,6 @@ import {
   SupportPage,
   Pricing01Page,
   Pricing02Page,
-  ComingSoonPage,
   MaintenancePage,
   // Components
   DemoIconsPage,
@@ -101,7 +100,6 @@ export default function Router() {
     {
       element: <CompactLayout />,
       children: [
-        { path: 'coming-soon', element: <ComingSoonPage /> },
         { path: 'maintenance', element: <MaintenancePage /> },
         { path: '500', element: <Page500 /> },
         { path: '404', element: <Page404 /> },

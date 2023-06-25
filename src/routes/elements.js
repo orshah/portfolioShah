@@ -37,7 +37,6 @@ export const ElearningPostPage = Loadable(
 );
 
 // COMMON
-export const ComingSoonPage = Loadable(lazy(() => import('../pages/ComingSoonPage')));
 export const HomePage = Loadable(lazy(() => import('../pages/HomePage')));
 export const MaintenancePage = Loadable(lazy(() => import('../pages/MaintenancePage')));
 export const Page404 = Loadable(lazy(() => import('../pages/Page404')));
