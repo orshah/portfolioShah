@@ -22,7 +22,7 @@ import { _socials } from 'src/_mock';
 import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
 //
-import { pageLinks, navConfig } from '../nav/config-navigation';
+// import { pageLinks, navConfig } from '../nav/config-navigation';
 import ListDesktop from './ListDesktop';
 import ListMobile from './ListMobile';
 
@@ -47,11 +47,11 @@ export default function Footer() {
 
   const { pathname } = useLocation();
 
-  const mobileList = navConfig.find((i) => i.title === 'Pages')?.children || [];
+  // const mobileList = navConfig.find((i) => i.title === 'Pages')?.children || [];
 
-  const desktopList = pageLinks.sort((listA, listB) => Number(listA.order) - Number(listB.order));
+  // const desktopList = pageLinks.sort((listA, listB) => Number(listA.order) - Number(listB.order));
 
-  const renderLists = isMdUp ? desktopList : mobileList;
+  // const renderLists = isMdUp ? desktopList : mobileList;
 
   const isHome = pathname === '/';
 
@@ -145,15 +145,15 @@ export default function Footer() {
           <Grid xs={12} md={6}>
             {isMdUp ? (
               <Masonry columns={4} spacing={2} defaultColumns={4} defaultSpacing={2}>
-                {renderLists.map((list) => (
+                {/* {renderLists.map((list) => (
                   <ListDesktop key={list.subheader} list={list} />
-                ))}
+                ))} */}
               </Masonry>
             ) : (
               <Stack spacing={1.5}>
-                {renderLists.map((list) => (
+                {/* {renderLists.map((list) => (
                   <ListMobile key={list.subheader} list={list} />
-                ))}
+                ))} */}
               </Stack>
             )}
           </Grid>

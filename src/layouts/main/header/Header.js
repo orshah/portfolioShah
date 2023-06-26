@@ -16,7 +16,7 @@ import Logo from 'src/components/logo';
 import Label from 'src/components/label';
 import SettingsDrawer from 'src/components/settings/drawer';
 //
-import { NavMobile, NavDesktop, navConfig } from '../nav';
+// import { NavMobile, NavDesktop, navConfig } from '../nav';
 import Searchbar from '../../components/Searchbar';
 import HeaderShadow from '../../components/HeaderShadow';
 
@@ -77,8 +77,6 @@ export default function Header({ headerOnDark }) {
             </Link>
           </Box>
 
-          {isMdUp && <NavDesktop data={navConfig} />}
-
           <Stack
             spacing={2}
             flexGrow={1}
@@ -105,7 +103,7 @@ export default function Header({ headerOnDark }) {
             )}
           </Stack>
 
-          {!isMdUp && <NavMobile data={navConfig} />}
+          {/* {!isMdUp && <NavMobile data={navConfig} />} */}
         </Container>
       </Toolbar>
 
