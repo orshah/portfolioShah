@@ -36,8 +36,14 @@ export default function Error404View() {
         />
       </m.div>
 
-      <Button component={RouterLink} to="/" size="large" color="inherit" variant="contained">
-        Go to Home
+      <Button
+        component={RouterLink}
+        to="/e-learning/landing"
+        size="large"
+        color="inherit"
+        variant="contained"
+      >
+        Go to Main Page
       </Button>
     </MotionContainer>
   );

@@ -76,14 +76,13 @@ export default function ElearningLandingHero() {
                 }}
               >
                 <Typography variant="h1">
-                  Free
+                  Hi!
                   <Box component="span" sx={{ color: 'text.disabled' }}>
-                    {` Online `}
+                    {` I'm Shahzod`}
                   </Box>
                   <Box component="span" sx={{ color: 'primary.main', textDecoration: 'underline' }}>
-                    {` Courses `}
+                    {` Front-end developer `}
                   </Box>
-                  From The Experts
                 </Typography>
 
                 <Typography sx={{ color: 'text.secondary', mt: 3, mb: 5 }}>
