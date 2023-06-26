@@ -141,22 +141,6 @@ export default function Footer() {
               </Stack>
             </Stack>
           </Grid>
-
-          <Grid xs={12} md={6}>
-            {isMdUp ? (
-              <Masonry columns={4} spacing={2} defaultColumns={4} defaultSpacing={2}>
-                {/* {renderLists.map((list) => (
-                  <ListDesktop key={list.subheader} list={list} />
-                ))} */}
-              </Masonry>
-            ) : (
-              <Stack spacing={1.5}>
-                {/* {renderLists.map((list) => (
-                  <ListMobile key={list.subheader} list={list} />
-                ))} */}
-              </Stack>
-            )}
-          </Grid>
         </Grid>
       </Container>
       <Divider />

@@ -15,8 +15,6 @@ import { HEADER } from 'src/config-global';
 import Logo from 'src/components/logo';
 import Label from 'src/components/label';
 import SettingsDrawer from 'src/components/settings/drawer';
-//
-// import { NavMobile, NavDesktop, navConfig } from '../nav';
 import Searchbar from '../../components/Searchbar';
 import HeaderShadow from '../../components/HeaderShadow';
 
@@ -89,18 +87,6 @@ export default function Header({ headerOnDark }) {
 
               <SettingsDrawer />
             </Stack>
-
-            {isMdUp && (
-              <Button
-                variant="contained"
-                color="inherit"
-                href={paths.zoneStore}
-                target="_blank"
-                rel="noopener"
-              >
-                Buy Now
-              </Button>
-            )}
           </Stack>
 
           {/* {!isMdUp && <NavMobile data={navConfig} />} */}
