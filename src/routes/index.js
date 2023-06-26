@@ -17,7 +17,6 @@ import {
   // Common
   Page404,
   Page500,
-  HomePage,
 } from './elements';
 
 // ----------------------------------------------------------------------
@@ -28,7 +27,6 @@ export default function Router() {
     {
       element: <MainLayout />,
       children: [
-        { element: <HomePage />, index: true },
         // E-learning
         {
           path: 'e-learning',
