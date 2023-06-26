@@ -27,9 +27,9 @@ import { PlayerDialog } from 'src/components/player';
 // ----------------------------------------------------------------------
 
 const SUMMARY = [
-  { value: 14000, label: 'Learners', color: 'warning' },
-  { value: 1050, label: 'Courses', color: 'error' },
-  { value: 59000, label: 'Graduates', color: 'success' },
+  { value: 3, label: 'Years of Experience', color: 'warning' },
+  { value: 5, label: 'Personal Projects', color: 'error' },
+  { value: 10000, label: 'Cups of coffee', color: 'success' },
 ];
 
 // ----------------------------------------------------------------------
@@ -91,10 +91,6 @@ export default function ElearningLandingHero() {
                 </Typography>
 
                 <Stack spacing={3} alignItems="center" direction={{ xs: 'column', md: 'row' }}>
-                  <Button color="inherit" size="large" variant="contained">
-                    Ready Start
-                  </Button>
-
                   <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
                     <Fab size="medium" color="info" onClick={handleOpenVideo} sx={{ mr: 1 }}>
                       <Iconify width={24} icon="carbon:play" />

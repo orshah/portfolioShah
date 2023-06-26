@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { memo } from 'react';
-import { m } from 'framer-motion';
+import { color, m } from 'framer-motion';
 // @mui
 import { alpha, useTheme } from '@mui/material/styles';
 import { Box, Typography } from '@mui/material';
@@ -38,7 +38,7 @@ function ElearningHeroIllustration({ sx, ...other }) {
 
   const GREEN = theme.palette.success.main;
 
-  const YELLOW = theme.palette.warning.main;
+  const YELLOW = '#F0DB4F';
 
   const BLUE = '#355EC9';
 
@@ -107,13 +107,13 @@ function ElearningHeroIllustration({ sx, ...other }) {
         sx={{ zIndex: 9, left: 120, bottom: 168, position: 'absolute' }}
       >
         <Label
-          text="Python"
+          text="React"
           icon={
             <Image
               visibleByDefault
               disabledEffect
               alt="python"
-              src="/assets/icons/platforms/ic_platform_python.svg"
+              src="/assets/icons/platforms/ic_rct.svg"
               sx={{ width: 56, height: 56 }}
             />
           }
@@ -146,8 +146,16 @@ function ElearningHeroIllustration({ sx, ...other }) {
       <Box {...varRight} component={m.div} sx={{ zIndex: 8, bottom: 160, position: 'absolute' }}>
         <Icon
           color={YELLOW}
-          content={<Typography sx={{ ...styleIconContent }}>Ai</Typography>}
-          sx={{ transform: 'translateX(40px) scale(1.2) rotate(-15deg)' }}
+          content={
+            <Image
+              visibleByDefault
+              disabledEffect
+              alt="pencil icon"
+              src="/assets/icons/platforms/ic_js.svg"
+              sx={{ width: 60, height: 77 }}
+            />
+          }
+          sx={{ transform: 'translateX(50px) scale(1.2) rotate(-15deg)' }}
         />
       </Box>
 
@@ -162,7 +170,15 @@ function ElearningHeroIllustration({ sx, ...other }) {
       <Box {...varDown} component={m.div} sx={{ zIndex: 8, position: 'absolute' }}>
         <Icon
           color={BLUE}
-          content={<Typography sx={{ ...styleIconContent, color: 'common.white' }}>Ps</Typography>}
+          content={
+            <Image
+              visibleByDefault
+              disabledEffect
+              alt="pencil icon"
+              src="/assets/icons/platforms/ic_css.svg"
+              sx={{ width: 50, height: 65 }}
+            />
+          }
           sx={{ transform: 'scale(1.2) translate(-135px, -75px) rotate(15deg)' }}
         />
       </Box>
