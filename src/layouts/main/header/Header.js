@@ -12,7 +12,7 @@ import { paths } from 'src/routes/paths';
 // config
 import { HEADER } from 'src/config-global';
 // components
-import Logo from 'src/components/logo';
+// import Logo from 'src/components/logo';
 import Label from 'src/components/label';
 import SettingsDrawer from 'src/components/settings/drawer';
 import Searchbar from '../../components/Searchbar';
@@ -53,27 +53,7 @@ export default function Header({ headerOnDark }) {
         }}
       >
         <Container sx={{ height: 1, display: 'flex', alignItems: 'center' }}>
-          <Box sx={{ lineHeight: 0, position: 'relative' }}>
-            <Logo />
-
-            <Link href="https://zone-docs.vercel.app/changelog" target="_blank" rel="noopener">
-              <Label
-                color="info"
-                sx={{
-                  ml: 0.5,
-                  px: 0.5,
-                  top: -14,
-                  left: 60,
-                  height: 20,
-                  fontSize: 11,
-                  cursor: 'pointer',
-                  position: 'absolute',
-                }}
-              >
-                v2.0
-              </Label>
-            </Link>
-          </Box>
+          <Box sx={{ lineHeight: 0, position: 'relative' }}>{/* <Logo /> */}</Box>
 
           <Stack
             spacing={2}

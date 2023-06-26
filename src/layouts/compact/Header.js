@@ -10,7 +10,7 @@ import { bgBlur } from 'src/utils/cssStyles';
 // routes
 import { paths } from 'src/routes/paths';
 // components
-import Logo from 'src/components/logo';
+
 import SettingsDrawer from 'src/components/settings/drawer';
 //
 import HeaderShadow from '../components/HeaderShadow';
@@ -41,8 +41,6 @@ export default function Header({ isOffset }) {
           }),
         }}
       >
-        <Logo />
-
         <Stack spacing={1} direction="row" alignItems="center">
           <SettingsDrawer />
 

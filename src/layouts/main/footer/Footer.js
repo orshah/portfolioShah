@@ -19,7 +19,6 @@ import useResponsive from 'src/hooks/useResponsive';
 // _mock
 import { _socials } from 'src/_mock';
 // components
-import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
 //
 // import { pageLinks, navConfig } from '../nav/config-navigation';
@@ -57,8 +56,6 @@ export default function Footer() {
 
   const simpleFooter = (
     <Container sx={{ py: 8, textAlign: 'center' }}>
-      <Logo single />
-
       <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
         © 2023. All rights reserved
       </Typography>
@@ -79,7 +76,6 @@ export default function Footer() {
           <Grid xs={12} md={4}>
             <Stack spacing={{ xs: 3, md: 5 }}>
               <Stack alignItems="flex-start" spacing={3}>
-                <Logo />
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                   The starting point for your next project based on easy-to-customize Material-UI ©
                   helps you build apps faster and better.
@@ -134,11 +130,6 @@ export default function Footer() {
                   ))}
                 </Stack>
               </Stack>
-
-              <Stack spacing={2}>
-                <Typography variant="h6">Apps</Typography>
-                <AppStoreButton />
-              </Stack>
             </Stack>
           </Grid>
         </Grid>
@@ -173,32 +164,3 @@ export default function Footer() {
 }
 
 // ----------------------------------------------------------------------
-
-function AppStoreButton({ ...other }) {
-  return (
-    <Stack direction="row" flexWrap="wrap" {...other}>
-      <StyledAppStoreButton startIcon={<Iconify icon="ri:apple-fill" width={28} />}>
-        <Stack alignItems="flex-start">
-          <Typography variant="caption" sx={{ opacity: 0.72 }}>
-            Download on the
-          </Typography>
-
-          <Typography variant="h6" sx={{ mt: -0.5 }}>
-            Apple Store
-          </Typography>
-        </Stack>
-      </StyledAppStoreButton>
-
-      <StyledAppStoreButton startIcon={<Iconify icon="logos:google-play-icon" width={28} />}>
-        <Stack alignItems="flex-start">
-          <Typography variant="caption" sx={{ opacity: 0.72 }}>
-            Download from
-          </Typography>
-          <Typography variant="h6" sx={{ mt: -0.5 }}>
-            Google Play
-          </Typography>
-        </Stack>
-      </StyledAppStoreButton>
-    </Stack>
-  );
-}
