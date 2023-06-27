@@ -20,6 +20,7 @@ import {
   ElearningLandingFeaturedCourses,
 } from '../landing';
 
+import Footer from '../../../layouts/main/footer/Footer';
 // ----------------------------------------------------------------------
 
 export default function ElearningLandingView() {
@@ -42,6 +43,7 @@ export default function ElearningLandingView() {
       <BlogElearningLatestPosts posts={_blogCoursePosts.slice(0, 4)} />
 
       <NewsletterElearning />
+      <Footer />
     </>
   );
 }
