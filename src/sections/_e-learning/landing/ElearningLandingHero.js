@@ -28,7 +28,7 @@ import { PlayerDialog } from 'src/components/player';
 
 const SUMMARY = [
   { value: 3, label: 'Years of Experience', color: 'warning' },
-  { value: 5, label: 'Personal Projects', color: 'error' },
+  { value: 10, label: 'Personal Projects', color: 'error' },
   { value: 10000, label: 'Cups of coffee', color: 'success' },
 ];
 
@@ -77,10 +77,13 @@ export default function ElearningLandingHero() {
               >
                 <Typography variant="h1">
                   Hi!
-                  <Box component="span" sx={{ color: 'text.disabled' }}>
+                  <Box component="span" sx={{ color: 'primary.main' }}>
                     {` I'm Shahzod`}
                   </Box>
-                  <Box component="span" sx={{ color: 'primary.main', textDecoration: 'underline' }}>
+                  <Box
+                    component="span"
+                    sx={{ color: 'text.disabled', textDecoration: 'underline', fontSize: '35px' }}
+                  >
                     {` Front-end developer `}
                   </Box>
                 </Typography>

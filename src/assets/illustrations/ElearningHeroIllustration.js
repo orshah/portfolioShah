@@ -36,7 +36,7 @@ const varRight = {
 function ElearningHeroIllustration({ sx, ...other }) {
   const theme = useTheme();
 
-  const GREEN = theme.palette.success.main;
+  const ORANGE = '#e34c26';
 
   const YELLOW = '#F0DB4F';
 
@@ -64,13 +64,13 @@ function ElearningHeroIllustration({ sx, ...other }) {
       {...other}
     >
       <Box sx={{ position: 'absolute', right: 18, bottom: 28, zIndex: 8 }}>
-        <Image
+        {/* <Image
           visibleByDefault
           disabledEffect
           alt="teacher"
           src="/assets/images/course/course_teacher_hero.png"
           sx={{ width: 546, height: 650 }}
-        />
+        /> */}
       </Box>
 
       <Box
@@ -137,8 +137,16 @@ function ElearningHeroIllustration({ sx, ...other }) {
         sx={{ top: 88, right: 72, zIndex: 8, position: 'absolute' }}
       >
         <Icon
-          color={GREEN}
-          content={<Typography sx={{ ...styleIconContent }}>Dw</Typography>}
+          color={ORANGE}
+          content={
+            <Image
+              visibleByDefault
+              disabledEffect
+              alt="pencil icon"
+              src="/assets/icons/platforms/ic_html.svg"
+              sx={{ width: 50, height: 50 }}
+            />
+          }
           sx={{ transform: 'scale(1.2) rotate(15deg)' }}
         />
       </Box>
@@ -159,14 +167,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
         />
       </Box>
 
-      <Box {...varUp} component={m.div} sx={{ zIndex: 8, right: 90, position: 'absolute' }}>
-        <Icon
-          color={PURPLE}
-          content={<Typography sx={{ ...styleIconContent, color: 'common.white' }}>Ae</Typography>}
-          sx={{ transform: 'scale(1.2) translateY(20px) rotate(15deg)' }}
-        />
-      </Box>
-
       <Box {...varDown} component={m.div} sx={{ zIndex: 8, position: 'absolute' }}>
         <Icon
           color={BLUE}
@@ -175,8 +175,8 @@ function ElearningHeroIllustration({ sx, ...other }) {
               visibleByDefault
               disabledEffect
               alt="pencil icon"
-              src="/assets/icons/platforms/ic_css.svg"
-              sx={{ width: 50, height: 65 }}
+              src="/assets/icons/platforms/ic_css2.svg"
+              sx={{ width: 100, height: 52 }}
             />
           }
           sx={{ transform: 'scale(1.2) translate(-135px, -75px) rotate(15deg)' }}
