@@ -10,7 +10,7 @@ import {
 //
 import TeamElearning from '../../team/e-learning';
 import NewsletterElearning from '../../newsletter/e-learning';
-import OurClientsElearning from '../../our-clients/e-learning';
+import OurClientsCareer from '../../our-clients/career';
 import { BlogElearningLatestPosts } from '../../blog/e-learning';
 import TestimonialElearning from '../../testimonial/e-learning';
 import {
@@ -27,7 +27,7 @@ export default function ElearningLandingView() {
     <>
       <ElearningLandingHero />
 
-      <OurClientsElearning brands={_brandsColor} />
+      <OurClientsCareer brands={_brandsColor} />
 
       <ElearningLandingIntroduce />
 

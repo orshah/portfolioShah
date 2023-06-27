@@ -48,12 +48,7 @@ export default function OurClientsCareer({ brands }) {
           mb: { xs: 8, md: 10 },
         }}
       >
-        <Typography variant="h2">Our Clients</Typography>
-
-        <Typography sx={{ color: 'text.secondary' }}>
-          Curabitur a felis in nunc fringilla tristique. Fusce egestas elit eget lorem. Etiam vitae
-          tortor.
-        </Typography>
+        <Typography variant="h2">I Work With</Typography>
       </Stack>
 
       <Carousel {...carouselSettings}>
@@ -71,8 +66,8 @@ export default function OurClientsCareer({ brands }) {
                 alt={brand.name}
                 src={brand.image}
                 sx={{
-                  width: 106,
-                  height: 32,
+                  width: 50,
+                  height: 50,
                   mx: 'auto',
                 }}
               />

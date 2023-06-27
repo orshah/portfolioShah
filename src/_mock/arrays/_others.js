@@ -86,20 +86,7 @@ export const _offices = ['Jordan', 'Canada', 'Portugal'].map((office, index) => 
 
 // ----------------------------------------------------------------------
 
-const BRANDS_NAME = [
-  'airbnb',
-  'dropbox',
-  'facebook',
-  'google',
-  'heroku',
-  'lenovo',
-  'microsoft',
-  'netflix',
-  'slack',
-  'spotify',
-  'tripadvisor',
-  'vimeo',
-];
+const BRANDS_NAME = ['css', 'figma', 'html', 'js', 'react'];
 
 export const _brands = BRANDS_NAME.map((brand, index) => ({
   id: _mock.id(index),
@@ -110,7 +97,7 @@ export const _brands = BRANDS_NAME.map((brand, index) => ({
 export const _brandsColor = BRANDS_NAME.map((brand, index) => ({
   id: _mock.id(index),
   name: brand,
-  image: `/assets/logo/${brand}_original.svg`,
+  image: `/assets/logo/${brand}.svg`,
 }));
 
 // ----------------------------------------------------------------------
