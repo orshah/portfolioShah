@@ -86,7 +86,19 @@ export const _offices = ['Jordan', 'Canada', 'Portugal'].map((office, index) => 
 
 // ----------------------------------------------------------------------
 
-const BRANDS_NAME = ['css', 'figma', 'html', 'js', 'react', 'jira'];
+const BRANDS_NAME = [
+  'react',
+  'js',
+  'css',
+  'html',
+  'figma',
+  'jira',
+  'github',
+  'mui',
+  'netlify',
+  'firebase',
+  'confluence',
+];
 
 export const _brands = BRANDS_NAME.map((brand, index) => ({
   id: _mock.id(index),
