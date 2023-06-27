@@ -25,7 +25,7 @@ export default function Router() {
   return useRoutes([
     // Main layout
     {
-      element: <MainLayout />,
+      // element: <MainLayout />,
       children: [
         // E-learning
         {

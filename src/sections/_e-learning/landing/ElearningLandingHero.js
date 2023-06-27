@@ -23,6 +23,7 @@ import ElearningHeroIllustration from 'src/assets/illustrations/ElearningHeroIll
 // components
 import Iconify from 'src/components/iconify';
 import { PlayerDialog } from 'src/components/player';
+import Header from '../../../layouts/main/header/Header';
 
 // ----------------------------------------------------------------------
 
@@ -59,6 +60,7 @@ export default function ElearningLandingHero() {
 
   return (
     <>
+      <Header />
       <StyledRoot>
         <Container
           sx={{
