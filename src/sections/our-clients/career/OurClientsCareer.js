@@ -53,12 +53,12 @@ export default function OurClientsCareer({ brands }) {
 
       <Carousel {...carouselSettings}>
         {brands.map((brand) => (
-          <Box key={brand.id} sx={{ px: 1.5 }}>
+          <Box key={brand.id} sx={{ px: 0.5 }}>
             <Paper
               variant="outlined"
               sx={{
                 py: 3,
-                borderRadius: 2,
+                borderRadius: 3,
                 bgcolor: 'background.default',
               }}
             >
@@ -66,8 +66,8 @@ export default function OurClientsCareer({ brands }) {
                 alt={brand.name}
                 src={brand.image}
                 sx={{
-                  width: 50,
-                  height: 50,
+                  width: '100%',
+                  height: '100%',
                   mx: 'auto',
                 }}
               />
