@@ -17,6 +17,7 @@ import Label from 'src/components/label';
 import SettingsDrawer from 'src/components/settings/drawer';
 import Searchbar from '../../components/Searchbar';
 import HeaderShadow from '../../components/HeaderShadow';
+import ModeOptions from '../../../components/settings/drawer/components/ModeOptions';
 
 // ----------------------------------------------------------------------
 
@@ -64,6 +65,7 @@ export default function Header({ headerOnDark }) {
           >
             <Stack spacing={1} direction="row" alignItems="center">
               <Searchbar />
+              <ModeOptions />
 
               <SettingsDrawer />
             </Stack>
