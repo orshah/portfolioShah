@@ -107,8 +107,8 @@ export const tourName = [
 // ----------------------------------------------------------------------
 
 export const courseTitle = [
-  'Design Masterclass Course',
-  'Fitness For Beginners (2020)',
+  'Car Dealership',
+  'Daycare',
   'The Secrets To Teaching Online',
   'Learn How To Create A Course Online And Level Up Your Career',
   'Create A Course Online Masterclass',

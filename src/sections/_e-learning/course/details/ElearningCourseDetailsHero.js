@@ -88,7 +88,7 @@ export default function ElearningCourseDetailsHero({ course }) {
           <CustomBreadcrumbs
             links={[
               { name: 'Home', href: '/' },
-              { name: 'Courses', href: paths.eLearning.courses },
+              { name: 'Projects', href: paths.eLearning.courses },
               { name: course.slug || '' },
             ]}
             sx={{
@@ -236,8 +236,14 @@ export default function ElearningCourseDetailsHero({ course }) {
           </Grid>
         </Container>
       </Box>
-
-      <PlayerDialog open={openVideo} onClose={handleCloseVideo} videoPath={_mock.video(0)} />
+      <PlayerDialog />
+      <iframe
+        title="something"
+        width="800"
+        height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTL4ZW14DDKjvK8ozSb7A4s%2FDEALERSHIP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D5-20557%26viewport%3D543%252C361%252C0.33%26scaling%3Dscale-down%26starting-point-node-id%3D5%253A20557%26mode%3Ddesign"
+        allowfullscreen
+      />
     </>
   );
 }

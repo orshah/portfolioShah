@@ -68,68 +68,8 @@ export default function ElearningCourseView() {
               <ElearningCourseDetailsInfo course={_mockCourse} />
             </Grid>
           )}
-
-          <Grid xs={12} md={7} lg={8}>
-            <ElearningCourseDetailsSummary course={_mockCourse} />
-
-            <Stack direction="row" flexWrap="wrap" sx={{ mt: 5 }}>
-              <Typography variant="subtitle2" sx={{ mt: 0.75, mr: 1.5 }}>
-                Share:
-              </Typography>
-
-              <Stack direction="row" alignItems="center" flexWrap="wrap">
-                {_socials.map((social) => (
-                  <Button
-                    key={social.value}
-                    size="small"
-                    variant="outlined"
-                    startIcon={<Iconify icon={social.icon} />}
-                    sx={{
-                      m: 0.5,
-                      flexShrink: 0,
-                      color: social.color,
-                      borderColor: social.color,
-                      '&:hover': {
-                        borderColor: social.color,
-                        bgcolor: alpha(social.color, 0.08),
-                      },
-                    }}
-                  >
-                    {social.label}
-                  </Button>
-                ))}
-              </Stack>
-            </Stack>
-
-            <Divider sx={{ my: 5 }} />
-
-            <ElearningCourseDetailsTeachersInfo teachers={_mockCourse.teachers} />
-          </Grid>
-
-          <Grid xs={12} md={5} lg={4}>
-            <Stack spacing={5}>
-              {isMdUp && <ElearningCourseDetailsInfo course={_mockCourse} />}
-
-              <Advertisement
-                advertisement={{
-                  title: 'Advertisement',
-                  description: 'Duis leo. Donec orci lectus, aliquam ut, faucibus non',
-                  imageUrl: _mock.image.course(7),
-                  path: '',
-                }}
-              />
-            </Stack>
-          </Grid>
         </Grid>
       </Container>
-
-      {isMdUp && <Divider />}
-
-      <ReviewElearning />
-
-      <ElearningCourseListSimilar courses={courseSimilar} />
-
-      <NewsletterElearning />
     </>
   );
 }
