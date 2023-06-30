@@ -67,9 +67,9 @@ export default function ElearningCourseItem({ course, vertical }) {
           }}
         >
           <Stack direction="row" alignItems="center" justifyContent="space-between">
-            <Typography variant="overline" sx={{ color: 'primary.main' }}>
+            {/* <Typography variant="overline" sx={{ color: 'primary.main' }}>
               {category}
-            </Typography>
+            </Typography> */}
           </Stack>
 
           <Stack spacing={1}>

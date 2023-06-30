@@ -34,15 +34,15 @@ export default function ElearningLandingView() {
 
       <ElearningLandingFeaturedCourses courses={_courses} />
 
-      <ElearningLandingCategories categories={_coursesByCategories} />
+      {/* <ElearningLandingCategories categories={_coursesByCategories} /> */}
 
-      <TeamElearning members={_members.slice(0, 4)} />
+      {/* <TeamElearning members={_members.slice(0, 4)} /> */}
 
-      <TestimonialElearning testimonials={_testimonials} />
+      {/* <TestimonialElearning testimonials={_testimonials} /> */}
 
-      <BlogElearningLatestPosts posts={_blogCoursePosts.slice(0, 4)} />
+      {/* <BlogElearningLatestPosts posts={_blogCoursePosts.slice(0, 4)} /> */}
 
-      <NewsletterElearning />
+      {/* <NewsletterElearning /> */}
       <Footer />
     </>
   );
