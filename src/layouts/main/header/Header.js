@@ -64,7 +64,6 @@ export default function Header({ headerOnDark }) {
             justifyContent="flex-end"
           >
             <Stack spacing={1} direction="row" alignItems="center">
-              <Searchbar />
               <ModeOptions />
 
               <SettingsDrawer />
