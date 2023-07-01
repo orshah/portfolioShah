@@ -1,12 +1,11 @@
 import { useLocation } from 'react-router-dom';
 // @mui
-import { Stack, Divider, Container, Typography, Unstable_Grid2 as Grid } from '@mui/material';
+import { Stack, Divider, Container, Typography } from '@mui/material';
 // hooks
 // _mock
 // components
 //
 // import { pageLinks, navConfig } from '../nav/config-navigation';
-import lgo from '../../../_mock/assets/logo/linkedin.png';
 
 // ----------------------------------------------------------------------
 
