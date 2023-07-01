@@ -8,7 +8,6 @@ import {
   Container,
   Box,
   Divider,
-  Button,
   Unstable_Grid2 as Grid,
 } from '@mui/material';
 // utils
@@ -24,6 +23,7 @@ import ElearningHeroIllustration from 'src/assets/illustrations/ElearningHeroIll
 import Iconify from 'src/components/iconify';
 import { PlayerDialog } from 'src/components/player';
 import Header from '../../../layouts/main/header/Header';
+import lgo from '../../../_mock/assets/logo/linkedin.png';
 
 // ----------------------------------------------------------------------
 
@@ -90,10 +90,18 @@ export default function ElearningLandingHero() {
                   </Box>
                 </Typography>
 
-                <Typography sx={{ color: 'text.secondary', mt: 3, mb: 5 }}>
-                  Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis
-                  venenatis ante odio sit amet eros.
-                </Typography>
+                <Stack spacing={3} alignItems="center" direction={{ xs: 'column', md: 'row' }}>
+                  <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
+                    <a href="https://www.linkedin.com/in/shahorifi/">
+                      <img
+                        src={lgo}
+                        alt="linkedin"
+                        style={{ height: '3.2rem', padding: '0.3rem' }}
+                      />
+                    </a>
+                    Get in touch
+                  </Stack>
+                </Stack>
 
                 <Stack spacing={3} alignItems="center" direction={{ xs: 'column', md: 'row' }}>
                   <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>

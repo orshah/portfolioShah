@@ -1,36 +1,13 @@
 import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
-// @mui
-import { Divider, Stack, Card, Typography, Box, Link, Avatar } from '@mui/material';
-// routes
+import { Card, Stack, Typography, Box, Link } from '@mui/material';
 import { paths } from 'src/routes/paths';
-// utils
-import { fCurrency, fShortenNumber } from 'src/utils/formatNumber';
-// components
+import { fShortenNumber } from 'src/utils/formatNumber';
 import Image from 'src/components/image';
-import Label from 'src/components/label';
-import Iconify from 'src/components/iconify';
 import TextMaxLine from 'src/components/text-max-line';
-import { height } from '@mui/system';
-
-// ----------------------------------------------------------------------
 
 export default function ElearningCourseItem({ course, vertical }) {
-  const {
-    slug,
-    level,
-    price,
-    ratings,
-    reviews,
-    teachers,
-    students,
-    coverImg,
-    category,
-    priceSale,
-    bestSeller,
-    totalHours,
-    description,
-  } = course;
+  const { slug, coverImg, category, description } = course;
 
   return (
     <Card
@@ -99,19 +76,10 @@ export default function ElearningCourseItem({ course, vertical }) {
 
 ElearningCourseItem.propTypes = {
   course: PropTypes.shape({
-    bestSeller: PropTypes.bool,
     category: PropTypes.string,
     coverImg: PropTypes.string,
     description: PropTypes.string,
-    level: PropTypes.string,
-    price: PropTypes.number,
-    priceSale: PropTypes.number,
-    ratings: PropTypes.number,
-    reviews: PropTypes.number,
     slug: PropTypes.string,
-    students: PropTypes.number,
-    teachers: PropTypes.array,
-    totalHours: PropTypes.number,
   }),
   vertical: PropTypes.bool,
 };
