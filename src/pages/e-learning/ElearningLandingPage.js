@@ -8,7 +8,7 @@ export default function ElearningLandingPage() {
   return (
     <>
       <Helmet>
-        <title>Home</title>
+        <title>Main</title>
       </Helmet>
 
       <ElearningLandingView />

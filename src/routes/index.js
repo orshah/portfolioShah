@@ -5,10 +5,7 @@ import CompactLayout from '../layouts/compact';
 //
 import {
   // E-Learning
-  ElearningAboutPage,
-  ElearningCoursePage,
-  ElearningContactPage,
-  ElearningCoursesPage,
+
   ElearningLandingPage,
 
   // Common
@@ -26,15 +23,8 @@ export default function Router() {
       children: [
         // E-learning
         {
-          path: 'e-learning',
-          children: [
-            { path: 'landing', element: <ElearningLandingPage /> },
-            { path: 'courses', element: <ElearningCoursesPage /> },
-            { path: 'course', element: <ElearningCoursePage /> },
-
-            { path: 'about', element: <ElearningAboutPage /> },
-            { path: 'contact', element: <ElearningContactPage /> },
-          ],
+          path: 'myportfolio',
+          element: <ElearningLandingPage />,
         },
         // Demo Components
       ],
@@ -51,6 +41,6 @@ export default function Router() {
         { path: '404', element: <Page404 /> },
       ],
     },
-    { path: '*', element: <Navigate to="e-learning/landing" replace /> },
+    { path: '*', element: <Navigate to="myportfolio" replace /> },
   ]);
 }
