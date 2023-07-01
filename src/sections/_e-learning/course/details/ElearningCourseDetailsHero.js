@@ -1,14 +1,10 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 // @mui
-import { alpha, styled } from '@mui/material/styles';
 import { Box, Stack, Container, Typography, Unstable_Grid2 as Grid } from '@mui/material';
 // routes
 import { paths } from 'src/routes/paths';
 // hooks
-import useResponsive from 'src/hooks/useResponsive';
 // utils
-import { bgGradient } from 'src/utils/cssStyles';
 
 // _mock
 

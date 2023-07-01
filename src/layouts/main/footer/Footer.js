@@ -1,16 +1,7 @@
 import { useLocation } from 'react-router-dom';
 // @mui
-import { alpha, styled } from '@mui/material/styles';
-import {
-  Stack,
-  Button,
-  Divider,
-  Container,
-  Typography,
-  Unstable_Grid2 as Grid,
-} from '@mui/material';
+import { Stack, Divider, Container, Typography, Unstable_Grid2 as Grid } from '@mui/material';
 // hooks
-import useResponsive from 'src/hooks/useResponsive';
 // _mock
 // components
 //
