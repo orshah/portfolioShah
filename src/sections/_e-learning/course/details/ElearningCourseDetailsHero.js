@@ -2,69 +2,32 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 // @mui
 import { alpha, styled } from '@mui/material/styles';
-import {
-  Box,
-  Fab,
-  Link,
-  Stack,
-  Avatar,
-  Divider,
-  Container,
-  Typography,
-  Unstable_Grid2 as Grid,
-} from '@mui/material';
+import { Box, Stack, Container, Typography, Unstable_Grid2 as Grid } from '@mui/material';
 // routes
 import { paths } from 'src/routes/paths';
 // hooks
 import useResponsive from 'src/hooks/useResponsive';
 // utils
 import { bgGradient } from 'src/utils/cssStyles';
-import { fShortenNumber } from 'src/utils/formatNumber';
+
 // _mock
-import _mock from 'src/_mock';
+
 // components
-import Label from 'src/components/label';
-import Image from 'src/components/image';
-import Iconify from 'src/components/iconify';
-import { PlayerDialog } from 'src/components/player';
+
 import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
 // ----------------------------------------------------------------------
-
-const StyledOverlay = styled('div')(({ theme }) => ({
-  ...bgGradient({
-    startColor: `${alpha(theme.palette.common.black, 0)} 0%`,
-    endColor: `${theme.palette.common.black} 75%`,
-  }),
-  top: 0,
-  left: 0,
-  zIndex: 8,
-  width: '100%',
-  height: '100%',
-  position: 'absolute',
-}));
 
 // ----------------------------------------------------------------------
 
 export default function ElearningCourseDetailsHero({ course }) {
   const {
     slug,
-    level,
-    ratings,
-    quizzes,
-    lessons,
-    category,
-    coverImg,
-    languages,
-    bestSeller,
-    totalHours,
-    description,
-    reviews,
-    students,
-    teachers = [],
-  } = course;
 
-  const isMdUp = useResponsive('up', 'md');
+    category,
+
+    description,
+  } = course;
 
   return (
     <>

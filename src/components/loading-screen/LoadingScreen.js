@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { m } from 'framer-motion';
 // @mui
 import { styled } from '@mui/material/styles';
 import { Box } from '@mui/material';
@@ -9,22 +8,6 @@ import { bgBlur } from 'src/utils/cssStyles';
 import ProgressBar from '../progress-bar';
 
 // ----------------------------------------------------------------------
-
-const StyledRoot = styled('div')(({ theme }) => ({
-  ...bgBlur({
-    blur: 2,
-    opacity: 0.24,
-    color: theme.palette.background.default,
-  }),
-  top: 0,
-  zIndex: 9999,
-  position: 'fixed',
-  width: '100%',
-  height: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-}));
 
 // ----------------------------------------------------------------------
 

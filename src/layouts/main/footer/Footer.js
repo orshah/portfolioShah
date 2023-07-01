@@ -1,50 +1,27 @@
 import { useLocation } from 'react-router-dom';
 // @mui
 import { alpha, styled } from '@mui/material/styles';
-import Masonry from '@mui/lab/Masonry';
 import {
-  Link,
   Stack,
   Button,
   Divider,
   Container,
-  TextField,
   Typography,
-  IconButton,
-  InputAdornment,
   Unstable_Grid2 as Grid,
 } from '@mui/material';
 // hooks
 import useResponsive from 'src/hooks/useResponsive';
 // _mock
-import { _socials } from 'src/_mock';
 // components
-import Iconify from 'src/components/iconify';
 //
 // import { pageLinks, navConfig } from '../nav/config-navigation';
-import ListDesktop from './ListDesktop';
-import ListMobile from './ListMobile';
 import lgo from '../../../_mock/assets/logo/linkedin.png';
 
 // ----------------------------------------------------------------------
 
-const StyledAppStoreButton = styled(Button)(({ theme }) => ({
-  flexShrink: 0,
-  padding: '5px 12px',
-  margin: theme.spacing(1),
-  color: theme.palette.common.white,
-  border: `solid 1px ${alpha(theme.palette.common.black, 0.24)}`,
-  background: `linear-gradient(180deg, ${theme.palette.grey[900]} 0%, ${theme.palette.common.black} 100%)`,
-  '& .MuiButton-startIcon': {
-    marginLeft: 0,
-  },
-}));
-
 // ----------------------------------------------------------------------
 
 export default function Footer() {
-  const isMdUp = useResponsive('up', 'md');
-
   const { pathname } = useLocation();
 
   // const mobileList = navConfig.find((i) => i.title === 'Pages')?.children || [];

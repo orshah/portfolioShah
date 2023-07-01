@@ -1,5 +1,5 @@
 // _mock
-import { _testimonials, _members, _brandsColor } from 'src/_mock';
+import { _testimonials, _brandsColor } from 'src/_mock';
 //
 import OurClientsCareer from '../../our-clients/career';
 import TestimonialElearning from '../../testimonial/e-learning';

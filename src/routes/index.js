@@ -1,6 +1,5 @@
 import { Navigate, useRoutes } from 'react-router-dom';
 // layouts
-import MainLayout from '../layouts/main';
 import SimpleLayout from '../layouts/simple';
 import CompactLayout from '../layouts/compact';
 //
