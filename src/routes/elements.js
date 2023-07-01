@@ -17,9 +17,7 @@ const Loadable = (Component) => (props) =>
 export const ElearningAboutPage = Loadable(
   lazy(() => import('../pages/e-learning/ElearningAboutPage'))
 );
-export const ElearningBlogPage = Loadable(
-  lazy(() => import('../pages/e-learning/ElearningBlogPage'))
-);
+
 export const ElearningContactPage = Loadable(
   lazy(() => import('../pages/e-learning/ElearningContactPage'))
 );
@@ -31,9 +29,6 @@ export const ElearningCoursesPage = Loadable(
 );
 export const ElearningLandingPage = Loadable(
   lazy(() => import('../pages/e-learning/ElearningLandingPage'))
-);
-export const ElearningPostPage = Loadable(
-  lazy(() => import('../pages/e-learning/ElearningPostPage'))
 );
 
 export const Page404 = Loadable(lazy(() => import('../pages/Page404')));

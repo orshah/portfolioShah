@@ -6,8 +6,6 @@ import CompactLayout from '../layouts/compact';
 //
 import {
   // E-Learning
-  ElearningBlogPage,
-  ElearningPostPage,
   ElearningAboutPage,
   ElearningCoursePage,
   ElearningContactPage,
@@ -34,8 +32,7 @@ export default function Router() {
             { path: 'landing', element: <ElearningLandingPage /> },
             { path: 'courses', element: <ElearningCoursesPage /> },
             { path: 'course', element: <ElearningCoursePage /> },
-            { path: 'posts', element: <ElearningBlogPage /> },
-            { path: 'post', element: <ElearningPostPage /> },
+
             { path: 'about', element: <ElearningAboutPage /> },
             { path: 'contact', element: <ElearningContactPage /> },
           ],
