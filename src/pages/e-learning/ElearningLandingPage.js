@@ -8,7 +8,7 @@ export default function ElearningLandingPage() {
   return (
     <>
       <Helmet>
-        <title>Landing | ZONE UI</title>
+        <title>Home</title>
       </Helmet>
 
       <ElearningLandingView />
