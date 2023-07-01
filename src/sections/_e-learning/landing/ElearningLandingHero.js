@@ -30,7 +30,7 @@ import lgo from '../../../_mock/assets/logo/linkedin.png';
 const SUMMARY = [
   { value: 3, label: 'Years of Experience', color: 'warning' },
   { value: 10, label: 'Personal Projects', color: 'error' },
-  { value: 10000, label: 'Cups of coffee', color: 'success' },
+  { value: 5000, label: 'Cups of coffee', color: 'success' },
 ];
 
 // ----------------------------------------------------------------------

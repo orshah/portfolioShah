@@ -34,38 +34,16 @@ export default function Footer() {
   const mainFooter = (
     <>
       <Divider />
-
-      <Container
-        sx={{
-          overflow: 'hidden',
-          py: { xs: 8, md: 3 },
-        }}
-      >
-        <Grid container spacing={3} justifyContent={{ md: 'space-between' }}>
-          <Grid xs={12} md={4}>
-            <Stack spacing={{ xs: 3, md: 5 }}>
-              <Stack spacing={2}>
-                <Stack spacing={1}>
-                  <Typography variant="h6">Let’s stay in touch</Typography>
-                  <a href="https://www.linkedin.com/in/shahorifi/">
-                    <img src={lgo} alt="linkedin" style={{ height: '3rem' }} />
-                  </a>
-                </Stack>
-              </Stack>
-            </Stack>
-          </Grid>
-        </Grid>
-      </Container>
       <Divider />
       <Container>
         <Stack
           spacing={2.5}
           direction={{ xs: 'column', md: 'row' }}
-          justifyContent="space-between"
+          justifyContent="space-around"
           sx={{ py: 3, textAlign: 'center' }}
         >
           <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            © 2023. All rights reserved by Shah Oripov
+            © 2023. All rights reserved by Shahzod Oripov
           </Typography>
         </Stack>
       </Container>
