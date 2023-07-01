@@ -32,24 +32,22 @@ const myProjects = [
     url: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTL4ZW14DDKjvK8ozSb7A4s%2FDEALERSHIP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D5-20557%26viewport%3D543%252C361%252C0.33%26scaling%3Dscale-down%26starting-point-node-id%3D5%253A20557%26mode%3Ddesign',
     img: img1,
     alt: 'car dealership',
-    description:
-      'Lorem impsum Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.',
+    description: `The Figma Car Dealership project is a digital design I created. It's all about a car dealership website I made, and let me tell you, it's super cool. The design is sleek and easy to use, with a modern look and feel. I focused on creating a visually appealing and user-friendly interface for automotive businesses. It's a great example of my skills in action!`,
   },
   {
     title: 'Daycare',
     url: 'https://helenlucydaycare.netlify.app/',
     img: img2,
     alt: 'daycare',
-    description:
-      'Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.Lorem impsum',
+    description: `
+    The React and MUI Daycare project is a portfolio gem, showcasing my frontend skills. It's about a cute daycare site made with React and MUI. Trust me, it's user-friendly and visually charming. With a playful design, I aimed for an enjoyable experience for parents and kids.  It's proof of my ability to blend creativity and functionality for engaging childcare interfaces.`,
   },
   {
     title: 'Online Store',
     url: 'https://myperfectstore.netlify.app/',
     img: img4,
     alt: 'online store',
-    description:
-      'Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.Lorem impsum',
+    description: `This Online Store project is a standout addition to my portfolio, showcasing my frontend skills. It revolves around an elegant online store I developed using React. Rest assured, it boasts a user-friendly interface and visually appealing aesthetics. With a contemporary design, I strived to create an immersive shopping experience for customers.`,
   },
   {
     title: 'Spy Game',
@@ -64,8 +62,7 @@ const myProjects = [
     url: 'https://weatherappsh.netlify.app/',
     img: img5,
     alt: 'weather app',
-    description:
-      'Lorem impsumNullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.',
+    description: `The React Weather App project is a standout in my portfolio, showcasing my frontend skills. It's a dynamic weather application built with React, featuring a user-friendly design and real-time weather information from an API. This project demonstrates my ability to create intuitive and informative apps with a blend of creativity and functionality.`,
   },
 ];
 
