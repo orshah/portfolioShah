@@ -55,6 +55,16 @@ function ElearningHeroIllustration({ sx, ...other }) {
       }}
       {...other}
     >
+      <Box sx={{ position: 'absolute', right: 18, bottom: 80, zIndex: 8 }}>
+        <Image
+          visibleByDefault
+          disabledEffect
+          alt="teacher"
+          src="/assets/images/course/main_one.png"
+          sx={{ width: 546, height: 650 }}
+        />
+      </Box>
+
       <Box
         {...varDown}
         component={m.div}
@@ -68,7 +78,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
           sx={{ width: 52, height: 62 }}
         />
       </Box>
-
       <Box
         {...varRight}
         component={m.div}
@@ -82,7 +91,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
           sx={{ width: 60, height: 77 }}
         />
       </Box>
-
       <Box
         {...varUp}
         component={m.div}
@@ -110,9 +118,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
           }}
         />
       </Box>
-
-      {/* Icon */}
-
       <Box
         {...varLeft}
         component={m.div}
@@ -132,7 +137,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
           sx={{ transform: 'scale(1.2) rotate(15deg)' }}
         />
       </Box>
-
       <Box {...varRight} component={m.div} sx={{ zIndex: 8, bottom: 160, position: 'absolute' }}>
         <Icon
           color={YELLOW}
@@ -148,7 +152,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
           sx={{ transform: 'translateX(50px) scale(1.2) rotate(-15deg)' }}
         />
       </Box>
-
       <Box {...varDown} component={m.div} sx={{ zIndex: 8, position: 'absolute' }}>
         <Icon
           color={BLUE}
@@ -164,7 +167,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
           sx={{ transform: 'scale(1.2) translate(-135px, -75px) rotate(15deg)' }}
         />
       </Box>
-
       <Pattern01 sx={{ left: 0, top: 0 }} />
       <Pattern02 sx={{ top: 0, left: 0, opacity: 0.24, transform: 'scale(1.2)' }} />
       <Shape sx={{ position: 'absolute', right: 32, bottom: 32 }} />
