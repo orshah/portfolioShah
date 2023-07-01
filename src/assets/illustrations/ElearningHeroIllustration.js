@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { memo } from 'react';
-import { color, m } from 'framer-motion';
+import { m } from 'framer-motion';
 // @mui
 import { alpha, useTheme } from '@mui/material/styles';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 // components
 import Image from 'src/components/image';
 // pattern
@@ -42,14 +42,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
 
   const BLUE = '#355EC9';
 
-  const PURPLE = '#9B3AB1';
-
-  const styleIconContent = {
-    fontSize: 22,
-    color: 'common.black',
-    fontWeight: 'fontWeightBold',
-  };
-
   return (
     <Box
       sx={{
@@ -63,16 +55,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
       }}
       {...other}
     >
-      <Box sx={{ position: 'absolute', right: 18, bottom: 28, zIndex: 8 }}>
-        {/* <Image
-          visibleByDefault
-          disabledEffect
-          alt="teacher"
-          src="/assets/images/course/course_teacher_hero.png"
-          sx={{ width: 546, height: 650 }}
-        /> */}
-      </Box>
-
       <Box
         {...varDown}
         component={m.div}

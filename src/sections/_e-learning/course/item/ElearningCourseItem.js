@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
-import { Card, Stack, Typography, Box, Link } from '@mui/material';
+import { Card, Stack, Box, Link } from '@mui/material';
 import { paths } from 'src/routes/paths';
-import { fShortenNumber } from 'src/utils/formatNumber';
 import Image from 'src/components/image';
 import TextMaxLine from 'src/components/text-max-line';
 
 export default function ElearningCourseItem({ course, vertical }) {
-  const { slug, coverImg, category, description } = course;
+  const { slug, coverImg, description } = course;
 
   return (
     <Card
