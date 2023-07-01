@@ -1,21 +1,16 @@
 import PropTypes from 'prop-types';
 // @mui
 import { useTheme } from '@mui/material/styles';
-import { Box, Link, Stack, Button, AppBar, Toolbar, Container } from '@mui/material';
+import { Box, Stack, AppBar, Toolbar, Container } from '@mui/material';
 // hooks
 import useOffSetTop from 'src/hooks/useOffSetTop';
-import useResponsive from 'src/hooks/useResponsive';
 // utils
 import { bgBlur } from 'src/utils/cssStyles';
 // routes
-import { paths } from 'src/routes/paths';
 // config
 import { HEADER } from 'src/config-global';
 // components
-// import Logo from 'src/components/logo';
-import Label from 'src/components/label';
 import SettingsDrawer from 'src/components/settings/drawer';
-import Searchbar from '../../components/Searchbar';
 import HeaderShadow from '../../components/HeaderShadow';
 import ModeOptions from '../../../components/settings/drawer/components/ModeOptions';
 
@@ -23,8 +18,6 @@ import ModeOptions from '../../../components/settings/drawer/components/ModeOpti
 
 export default function Header({ headerOnDark }) {
   const theme = useTheme();
-
-  const isMdUp = useResponsive('up', 'md');
 
   const isOffset = useOffSetTop();
 

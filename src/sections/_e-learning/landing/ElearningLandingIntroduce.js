@@ -24,7 +24,7 @@ export default function ElearningLandingIntroduce() {
           mb: { xs: 2, md: 10 },
         }}
       >
-        Nullam accumsan lorem in dui.
+        A Couple of words about myself
       </Typography>
 
       <Grid
@@ -46,31 +46,47 @@ export default function ElearningLandingIntroduce() {
 
         <Grid xs={12} md={6} lg={6}>
           <Typography variant="h3" sx={{ mb: 3 }}>
-            Phasellus gravida semper nisi. Vestibulum rutrum
+            Front-end React Developer with 3 Years of Experience
           </Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Curabitur a felis in nunc fringilla tristique. Fusce egestas elit eget lorem. Etiam
-            vitae tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos hymenaeos.
+            As a front-end React developer, I am passionate about creating engaging and interactive
+            user interfaces. I specialize in building responsive web applications using modern web
+            technologies and best practices. My goal is to deliver high-quality code that meets both
+            functional and aesthetic requirements.
           </Typography>
 
           <Stack
-            direction={{ xs: 'column', md: 'row' }}
+            direction={{ xs: 'column', md: 'column' }}
             spacing={{ xs: 5, md: 10 }}
             sx={{ mt: { xs: 8, md: 10 } }}
           >
             <Stack spacing={3}>
               <Box sx={{ width: 24, height: 3, bgcolor: 'primary.main' }} />
               <Typography sx={{ color: 'text.secondary' }}>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                Proficient in developing user interfaces using React.js and JavaScript.{' '}
               </Typography>
             </Stack>
 
             <Stack spacing={3}>
               <Box sx={{ width: 24, height: 3, bgcolor: 'primary.main' }} />
               <Typography sx={{ color: 'text.secondary' }}>
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                Experienced in working with front-end technologies such as HTML5, CSS3, and modern
+                CSS frameworks like Bootstrap or Tailwind CSS.{' '}
+              </Typography>
+            </Stack>
+            <Stack spacing={3}>
+              <Box sx={{ width: 24, height: 3, bgcolor: 'primary.main' }} />
+              <Typography sx={{ color: 'text.secondary' }}>
+                Familiar with version control systems, such as Git, and collaboration tools like
+                GitHub.
+              </Typography>
+            </Stack>
+            <Stack spacing={3}>
+              <Box sx={{ width: 24, height: 3, bgcolor: 'primary.main' }} />
+              <Typography sx={{ color: 'text.secondary' }}>
+                Strong understanding of responsive design principles and cross-browser
+                compatibility.
               </Typography>
             </Stack>
           </Stack>

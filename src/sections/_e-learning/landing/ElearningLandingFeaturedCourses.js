@@ -7,29 +7,15 @@ import useResponsive from 'src/hooks/useResponsive';
 // components
 import Carousel, { CarouselArrows } from 'src/components/carousel';
 //
-import { Link as RouterLink } from 'react-router-dom';
+
 // @mui
-import {
-  Divider,
-  Card,
-  Link,
-  Avatar,
-  Container,
-  Stack,
-  Typography,
-  Box,
-  Button,
-} from '@mui/material';
+import { Container, Stack, Typography, Box, Button } from '@mui/material';
 // routes
-import { paths } from 'src/routes/paths';
+
 // utils
-import { fCurrency, fShortenNumber } from 'src/utils/formatNumber';
+
 // components
-import Image from 'src/components/image';
-import Label from 'src/components/label';
-import Iconify from 'src/components/iconify';
-import TextMaxLine from 'src/components/text-max-line';
-import { height } from '@mui/system';
+
 import './elearningLandingFeaturedCourses.style.css';
 import { ElearningCourseItem } from '../course/item';
 import img1 from '../../../_mock/assets/course/course_1.jpg';
@@ -58,20 +44,20 @@ const myProjects = [
       'Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.Lorem impsum',
   },
   {
-    title: 'Spy Game',
-    url: 'https://spygame.netlify.app/',
-    img: img3,
-    alt: 'spy game',
-    description:
-      'Lorem impsumNullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.',
-  },
-  {
     title: 'Online Store',
     url: 'https://myperfectstore.netlify.app/',
     img: img4,
     alt: 'online store',
     description:
       'Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.Lorem impsum',
+  },
+  {
+    title: 'Spy Game',
+    url: 'https://spygame.netlify.app/',
+    img: img3,
+    alt: 'spy game',
+    description:
+      'Lorem impsumNullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.',
   },
   {
     title: 'Weather App',
@@ -130,9 +116,6 @@ export default function ElearningLandingFeaturedCourses({ courses }) {
       >
         <Stack spacing={3} flexGrow={1}>
           <Typography variant="h2">My projects</Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            Nullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.
-          </Typography>
         </Stack>
 
         {isMdUp && <CarouselArrows spacing={2} onNext={handleNext} onPrev={handlePrev} />}
