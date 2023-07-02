@@ -59,9 +59,9 @@ function ElearningHeroIllustration({ sx, ...other }) {
         <Image
           visibleByDefault
           disabledEffect
-          alt="teacher"
+          alt="myphoto"
           src="/assets/images/course/main_one.png"
-          sx={{ width: 546, height: 650 }}
+          sx={{ width: 546, height: 700 }}
         />
       </Box>
 
@@ -102,7 +102,7 @@ function ElearningHeroIllustration({ sx, ...other }) {
             <Image
               visibleByDefault
               disabledEffect
-              alt="python"
+              alt="react"
               src="/assets/icons/platforms/ic_rct.svg"
               sx={{ width: 56, height: 56 }}
             />
@@ -129,7 +129,7 @@ function ElearningHeroIllustration({ sx, ...other }) {
             <Image
               visibleByDefault
               disabledEffect
-              alt="pencil icon"
+              alt="html"
               src="/assets/icons/platforms/ic_html.svg"
               sx={{ width: 50, height: 50 }}
             />
@@ -144,7 +144,7 @@ function ElearningHeroIllustration({ sx, ...other }) {
             <Image
               visibleByDefault
               disabledEffect
-              alt="pencil icon"
+              alt="js"
               src="/assets/icons/platforms/ic_js.svg"
               sx={{ width: 60, height: 77 }}
             />
@@ -159,7 +159,7 @@ function ElearningHeroIllustration({ sx, ...other }) {
             <Image
               visibleByDefault
               disabledEffect
-              alt="pencil icon"
+              alt="css"
               src="/assets/icons/platforms/ic_css2.svg"
               sx={{ width: 100, height: 52 }}
             />
