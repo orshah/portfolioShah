@@ -10,7 +10,6 @@ import { bgBlur } from 'src/utils/cssStyles';
 // config
 import { HEADER } from 'src/config-global';
 // components
-import SettingsDrawer from 'src/components/settings/drawer';
 import HeaderShadow from '../../components/HeaderShadow';
 import ModeOptions from '../../../components/settings/drawer/components/ModeOptions';
 
@@ -59,7 +58,7 @@ export default function Header({ headerOnDark }) {
             <Stack spacing={1} direction="row" alignItems="center">
               <ModeOptions />
 
-              <SettingsDrawer />
+              {/* <SettingsDrawer /> */}
             </Stack>
           </Stack>
 

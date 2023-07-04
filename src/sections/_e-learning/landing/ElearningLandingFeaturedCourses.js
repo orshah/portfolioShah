@@ -55,7 +55,7 @@ const myProjects = [
     img: img3,
     alt: 'spy game',
     description:
-      'Lorem impsumNullam accumsan lorem in dui. Praesent ac massa at ligula laoreet iaculis.',
+      'The Spy Game project is an exciting addition to my portfolio, highlighting my coding skills. It revolves around a thrilling spy-themed game that I developed. It promises an immersive experience, keeping players on the edge of their seats. With clever coding techniques and attention to detail, I aimed to create an engaging and suspenseful gameplay.',
   },
   {
     title: 'Weather App',
