@@ -17,21 +17,16 @@ import {
 
 export default function Router() {
   return useRoutes([
-    // Main layout
-    {
-      // element: <MainLayout />,
-      children: [
-        // E-learning
-        {
-          path: 'myportfolio',
-          element: <ElearningLandingPage />,
-        },
-        // Demo Components
-      ],
-    },
     // Simple layout
     {
       element: <SimpleLayout />,
+      children: [
+        {
+          // Set an empty path to match the root URL
+          path: '',
+          element: <ElearningLandingPage />,
+        },
+      ],
     },
     // Compact layout
     {
@@ -41,6 +36,6 @@ export default function Router() {
         { path: '404', element: <Page404 /> },
       ],
     },
-    { path: '*', element: <Navigate to="myportfolio" replace /> },
+    { path: '*', element: <Navigate to="" replace /> },
   ]);
 }
