@@ -5,10 +5,11 @@ import { ElearningLandingView } from 'src/sections/_e-learning/view';
 // ----------------------------------------------------------------------
 
 export default function ElearningLandingPage() {
+  const title = `Shahzod's Portfolio`;
   return (
     <>
       <Helmet>
-        <title>Main</title>
+        <title>{title}</title>
       </Helmet>
 
       <ElearningLandingView />
